@@ -1,5 +1,7 @@
-http://localhost:8501
+http://127.0.0.1:8001
+http://127.0.0.1:8000
 http://127.0.0.1:7860
 https://cloud.lp45.net
 https://artificial-interactions.com
-
+https://twitter.com
+https://medium.com
