@@ -1,0 +1,5 @@
+http://localhost:8501
+http://127.0.0.1:7860
+https://cloud.lp45.net
+https://artificial-interactions.com
+

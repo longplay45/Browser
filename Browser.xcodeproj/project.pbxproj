@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085B6D6D2A94CB1600C8CD2A /* URLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B6D6C2A94CB1600C8CD2A /* URLUtils.swift */; };
+		085B6D6F2A94CE7800C8CD2A /* urls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 085B6D6E2A94CE7800C8CD2A /* urls.txt */; };
 		0898728A2A8EABE3003E5544 /* BrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089872892A8EABE3003E5544 /* BrowserApp.swift */; };
 		0898728C2A8EABE3003E5544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898728B2A8EABE3003E5544 /* ContentView.swift */; };
 		0898728E2A8EABE4003E5544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0898728D2A8EABE4003E5544 /* Assets.xcassets */; };
 		089872922A8EABE4003E5544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089872912A8EABE4003E5544 /* Preview Assets.xcassets */; };
-		0898729C2A8EABE4003E5544 /* BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898729B2A8EABE4003E5544 /* BrowserTests.swift */; };
-		089872A62A8EABE4003E5544 /* BrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089872A52A8EABE4003E5544 /* BrowserUITests.swift */; };
-		089872A82A8EABE4003E5544 /* BrowserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089872A72A8EABE4003E5544 /* BrowserUITestsLaunchTests.swift */; };
 		089872B62A8EAC4B003E5544 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089872B52A8EAC4B003E5544 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		085B6D6C2A94CB1600C8CD2A /* URLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLUtils.swift; sourceTree = "<group>"; };
+		085B6D6E2A94CE7800C8CD2A /* urls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = urls.txt; sourceTree = "<group>"; };
 		089872862A8EABE3003E5544 /* Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089872892A8EABE3003E5544 /* BrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserApp.swift; sourceTree = "<group>"; };
 		0898728B2A8EABE3003E5544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,10 +43,7 @@
 		0898728F2A8EABE4003E5544 /* Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Browser.entitlements; sourceTree = "<group>"; };
 		089872912A8EABE4003E5544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		089872972A8EABE4003E5544 /* BrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0898729B2A8EABE4003E5544 /* BrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserTests.swift; sourceTree = "<group>"; };
 		089872A12A8EABE4003E5544 /* BrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		089872A52A8EABE4003E5544 /* BrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserUITests.swift; sourceTree = "<group>"; };
-		089872A72A8EABE4003E5544 /* BrowserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		089872B52A8EAC4B003E5544 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -79,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				089872882A8EABE3003E5544 /* Browser */,
-				0898729A2A8EABE4003E5544 /* BrowserTests */,
-				089872A42A8EABE4003E5544 /* BrowserUITests */,
 				089872872A8EABE3003E5544 /* Products */,
 				089872B42A8EAC4B003E5544 /* Frameworks */,
 			);
@@ -99,11 +95,13 @@
 		089872882A8EABE3003E5544 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
+				085B6D6E2A94CE7800C8CD2A /* urls.txt */,
 				089872892A8EABE3003E5544 /* BrowserApp.swift */,
 				0898728B2A8EABE3003E5544 /* ContentView.swift */,
 				0898728D2A8EABE4003E5544 /* Assets.xcassets */,
 				0898728F2A8EABE4003E5544 /* Browser.entitlements */,
 				089872902A8EABE4003E5544 /* Preview Content */,
+				085B6D6C2A94CB1600C8CD2A /* URLUtils.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -114,23 +112,6 @@
 				089872912A8EABE4003E5544 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0898729A2A8EABE4003E5544 /* BrowserTests */ = {
-			isa = PBXGroup;
-			children = (
-				0898729B2A8EABE4003E5544 /* BrowserTests.swift */,
-			);
-			path = BrowserTests;
-			sourceTree = "<group>";
-		};
-		089872A42A8EABE4003E5544 /* BrowserUITests */ = {
-			isa = PBXGroup;
-			children = (
-				089872A52A8EABE4003E5544 /* BrowserUITests.swift */,
-				089872A72A8EABE4003E5544 /* BrowserUITestsLaunchTests.swift */,
-			);
-			path = BrowserUITests;
 			sourceTree = "<group>";
 		};
 		089872B42A8EAC4B003E5544 /* Frameworks */ = {
@@ -250,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				089872922A8EABE4003E5544 /* Preview Assets.xcassets in Resources */,
+				085B6D6F2A94CE7800C8CD2A /* urls.txt in Resources */,
 				0898728E2A8EABE4003E5544 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085B6D6D2A94CB1600C8CD2A /* URLUtils.swift in Sources */,
 				0898728C2A8EABE3003E5544 /* ContentView.swift in Sources */,
 				0898728A2A8EABE3003E5544 /* BrowserApp.swift in Sources */,
 			);
@@ -284,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0898729C2A8EABE4003E5544 /* BrowserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				089872A62A8EABE4003E5544 /* BrowserUITests.swift in Sources */,
-				089872A82A8EABE4003E5544 /* BrowserUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +415,7 @@
 				DEVELOPMENT_TEAM = A8BRND7AMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Browser;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -474,6 +455,7 @@
 				DEVELOPMENT_TEAM = A8BRND7AMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Browser;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
