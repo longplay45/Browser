@@ -6,7 +6,7 @@ Native Apple Silicon Browser
 
 ## Edit urls.txt
 
-`/Applications/Browser.app/Contents/Resources/urls.txt`
+`nano /Applications/Browser.app/Contents/Resources/urls.txt`
 
 ### License
 Copyleft & -right netzwerkerei@gmail.com 2023
