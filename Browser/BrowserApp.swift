@@ -8,8 +8,17 @@
 import SwiftUI
 import WebKit
 
+class WebViewManager: ObservableObject {
+    @Published var webView: WKWebView?
+    
+    func reloadWebView() {
+        webView?.reload()
+    }
+}
+
 @main
 struct BrowserApp: App {
+    @ObservedObject var webViewManager = WebViewManager()
     @State private var isSettingsVisible: Bool = true
     @AppStorage("currentNumber") var currentNumber: String = "1"
     @AppStorage("startupURL") var startupURL: String = "http://localhost:8501"
@@ -29,7 +38,10 @@ struct BrowserApp: App {
             }
 
             Divider()
-
+            Button("Reload") {
+                webViewManager.reloadWebView() // Reload the webView
+            }.keyboardShortcut("r")
+            
             Button("Quit") {
                 NSApplication.shared.terminate(nil)
             }.keyboardShortcut("q")
