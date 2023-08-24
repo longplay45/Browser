@@ -1,7 +1,7 @@
 # 📚 Browser
 Native Apple Silicon Browser
 
-![Screenshot of Browser App](screenshot_2.png)
+![Screenshot of Browser App](screenshot.png)
 
 ## 🧰 Build and installation
 
