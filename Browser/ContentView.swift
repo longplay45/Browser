@@ -37,35 +37,46 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+
+class CustomWKWebView: WKWebView {
+    override func keyDown(with event: NSEvent) {
+        if event.modifierFlags.contains(.command) && event.charactersIgnoringModifiers == "r" {
+            self.reload()
+        } else {
+            super.keyDown(with: event)
+        }
+    }
+}
+
 struct WebView: NSViewRepresentable {
     let urlString: String
-    
+
     func makeNSView(context: Context) -> WKWebView {
-        let webView = WKWebView()
+        let webView = CustomWKWebView()
         webView.navigationDelegate = context.coordinator
         return webView
     }
-    
+
     func updateNSView(_ nsView: WKWebView, context: Context) {
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
             nsView.load(request)
         }
     }
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
-    
+
     class Coordinator: NSObject, WKNavigationDelegate {
         var parent: WebView
-        
+
         init(_ parent: WebView) {
             self.parent = parent
         }
-        
-        // Implement any WKNavigationDelegate methods if needed
     }
 }
+
+
 
 
