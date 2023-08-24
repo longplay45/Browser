@@ -6,7 +6,7 @@ Native Apple Silicon Browser
 ## 🧰 Build and installation
 
 ```
-# repo
+# clone repo
 git clone https://github.com/netzwerkerei/Browser.git
 
 # build and copy Browser.app in /Applications
