@@ -9,12 +9,14 @@ Native Apple Silicon Browser
 # clone repo
 git clone https://github.com/netzwerkerei/Browser.git
 
-# build and copy Browser.app in /Applications
+# open in XCode and update developer settings
 cd Browser
-chmod +x release.sh
+open Browser.xcodeproj
 
 # to build and copy Browser.app to you /Applications folder.
-./release.sh
+cd Browser
+chmod +x release.sh
+sh ./release.sh
 ```
 
 ## 📝 Edit urls.txt
