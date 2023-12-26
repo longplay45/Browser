@@ -40,6 +40,7 @@ struct BrowserApp: App {
             Divider()
             Button("Reload") {
                 webViewManager.reloadWebView() // Reload the webView
+                print("Trigger Reload via Menu.")
             }.keyboardShortcut("r")
             
             Button("Quit") {
