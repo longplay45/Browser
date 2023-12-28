@@ -13,11 +13,10 @@ struct ContentView: View {
     @State private var userInputURL: String = ""
     @State private var viewSettings = true
     @AppStorage("currentNumber") var currentNumber: String = "1"
-    @AppStorage("startupURL") var startupURL: String = "http://localhost:8501"
     @State private var urls: [String] = readURLs() ?? []
     
     var body: some View {
-        VStack(spacing: 5) {
+        VStack (spacing: 5){
             if let currentNumberInt = Int(currentNumber), currentNumberInt > 0, currentNumberInt <= urls.count {
                 WebView(urlString: urls[currentNumberInt - 1])
             } else {
@@ -76,6 +75,3 @@ struct WebView: NSViewRepresentable {
         }
     }
 }
-
-
-

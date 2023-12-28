@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		080E7E8C2A97952A005EE2C9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 080E7E8B2A97952A005EE2C9 /* README.md */; };
-		085B6D6D2A94CB1600C8CD2A /* URLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B6D6C2A94CB1600C8CD2A /* URLUtils.swift */; };
+		085B6D6D2A94CB1600C8CD2A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B6D6C2A94CB1600C8CD2A /* Utils.swift */; };
 		085B6D6F2A94CE7800C8CD2A /* urls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 085B6D6E2A94CE7800C8CD2A /* urls.txt */; };
 		0898728A2A8EABE3003E5544 /* BrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089872892A8EABE3003E5544 /* BrowserApp.swift */; };
 		0898728C2A8EABE3003E5544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898728B2A8EABE3003E5544 /* ContentView.swift */; };
@@ -36,11 +36,11 @@
 
 /* Begin PBXFileReference section */
 		080E7E8B2A97952A005EE2C9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		085B6D6C2A94CB1600C8CD2A /* URLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLUtils.swift; sourceTree = "<group>"; };
+		085B6D6C2A94CB1600C8CD2A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		085B6D6E2A94CE7800C8CD2A /* urls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = urls.txt; sourceTree = "<group>"; };
 		089872862A8EABE3003E5544 /* Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089872892A8EABE3003E5544 /* BrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserApp.swift; sourceTree = "<group>"; };
-		0898728B2A8EABE3003E5544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0898728B2A8EABE3003E5544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		0898728D2A8EABE4003E5544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0898728F2A8EABE4003E5544 /* Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Browser.entitlements; sourceTree = "<group>"; };
 		089872912A8EABE4003E5544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				0898728D2A8EABE4003E5544 /* Assets.xcassets */,
 				0898728F2A8EABE4003E5544 /* Browser.entitlements */,
 				089872902A8EABE4003E5544 /* Preview Content */,
-				085B6D6C2A94CB1600C8CD2A /* URLUtils.swift */,
+				085B6D6C2A94CB1600C8CD2A /* Utils.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				085B6D6D2A94CB1600C8CD2A /* URLUtils.swift in Sources */,
+				085B6D6D2A94CB1600C8CD2A /* Utils.swift in Sources */,
 				0898728C2A8EABE3003E5544 /* ContentView.swift in Sources */,
 				0898728A2A8EABE3003E5544 /* BrowserApp.swift in Sources */,
 			);
@@ -424,7 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Browser/Preview Content\"";
-				DEVELOPMENT_TEAM = A8BRND7AMF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Browser;
@@ -466,7 +466,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Browser/Preview Content\"";
-				DEVELOPMENT_TEAM = A8BRND7AMF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Browser;
