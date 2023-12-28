@@ -1,2 +1,3 @@
 # Add up to 9 custom urls.
+# To reload this list, just restart Browser.app
 https://github.com/netzwerkerei/Browser

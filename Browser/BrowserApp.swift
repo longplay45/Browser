@@ -45,16 +45,16 @@ struct BrowserApp: App {
 
             Divider()
 
-            Button("Edit") {
+            Button("Edit URLs") {
                 FileUtility.openTextEditor()
-                print("Edit urls")
             }
 
-            Button("Reload") {
-                webViewManager.reloadWebView()
-                urls = readURLs() ?? []
-                print("Trigger Reload via Menu.")
-            }
+/*
+             Button("Reload") {
+                 urls = readURLs() ?? []
+                 webViewManager.reloadWebView()
+             }
+ */
 
             Button("Quit") {
                 NSApplication.shared.terminate(nil)

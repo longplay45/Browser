@@ -37,4 +37,5 @@ nano /Applications/Browser.app/Contents/Resources/urls.txt
 ```
 
 ## License
-©️left & -right netzwerkerei@gmail.com 2023
+
+©️left & -right [netzwerkerei@gmail.com](netzwerkerei@gmail.com) 2023
