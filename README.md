@@ -32,7 +32,9 @@ sh ./release.sh
 
 ### 📝 Edit urls.txt via the macos MenuBar or manully
 
-`nano /Applications/Browser.app/Contents/Resources/urls.txt`
+```sh
+nano /Applications/Browser.app/Contents/Resources/urls.txt
+```
 
 ## License
 ©️left & -right netzwerkerei@gmail.com 2023
