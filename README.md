@@ -1,6 +1,6 @@
 # 📚 Browser
 
-A native Apple Silicon Browser designed for efficiency and ease of use.
+100% distraction free native Apple Silicon Browser designed for efficiency and ease of use.
 
 ![Screenshot of Browser App](screenshot.png)
 
